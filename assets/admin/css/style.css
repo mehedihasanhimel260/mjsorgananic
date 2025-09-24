@@ -1,0 +1,8 @@
+/* Custom Admin Styles */
+    body { background: #f5f7fb; }
+    .sidebar { background: #1f2937; color: #fff; min-height: 100vh; }
+    .sidebar a { color: rgba(255,255,255,0.9); text-decoration: none; display: block; padding: .5rem 1rem; }
+    .sidebar .nav-link.active { background: rgba(255,255,255,0.1); border-radius: .25rem; }
+    .card-stats { border-left: 4px solid #0d6efd; }
+    .table-wrap { max-height: 300px; overflow:auto; }
+
