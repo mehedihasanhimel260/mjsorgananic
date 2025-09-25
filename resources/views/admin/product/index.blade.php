@@ -4,7 +4,11 @@
     <section class="mb-4">
         <div class="d-flex justify-content-between align-items-center mb-2">
             <h5>Products</h5>
-            <button class="btn btn-sm btn-primary">Add Product</button>
+         <button class="btn btn-sm btn-primary"
+        onclick="window.location='{{ route('admin.products.create') }}'">
+    Add Product
+</button>
+
         </div>
         <div class="card shadow-sm">
             <div class="card-body p-0">

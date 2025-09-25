@@ -2,8 +2,8 @@
             <nav class="col-md-3 col-lg-2 d-none d-md-block sidebar p-3">
                 <h5 class="mb-3">MyShop Admin</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item"><a class="nav-link active" href="#">Dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                    <li class="nav-item"><a class="nav-link {{ Route::currentRouteName() == 'admin.dashboard' ? 'active' : '' }}" href="{{ route('admin.dashboard') }}">Dashboard</a></li>
+                    <li class="nav-item"> <a class="nav-link {{ Route::currentRouteName() == 'admin.products.index' ? 'active' : '' }}" href="{{ route('admin.products.index') }}">Products</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Orders</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Customers</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>

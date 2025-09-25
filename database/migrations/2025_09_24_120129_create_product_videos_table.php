@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('product_videos', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('product_id');
+            $table->string('video')->nullable();
+            $table->string('text')->nullable();
             $table->timestamps();
         });
     }
